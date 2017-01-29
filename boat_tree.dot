@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="length <= 37.5\nentropy = 2.1219\nsamples = 7032\nvalue = [1473, 2818, 1049, 1376, 239, 62, 4, 3, 2, 1, 2, 1\n1, 1]"] ;
+1 [label="double_cabins <= 3.5\nentropy = 0.7015\nsamples = 1498\nvalue = [1242, 248, 3, 4, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="length <= 35.5\nentropy = 0.4106\nsamples = 1351\nvalue = [1242, 108, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.1484\nsamples = 706\nvalue = [691, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.6115\nsamples = 645\nvalue = [551, 93, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"] ;
+2 -> 4 ;
+5 [label="length <= 35.5\nentropy = 0.3419\nsamples = 147\nvalue = [0, 140, 2, 4, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]"] ;
+1 -> 5 ;
+6 [label="entropy = 1.9502\nsamples = 7\nvalue = [0, 2, 2, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.108\nsamples = 140\nvalue = [0, 138, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"] ;
+5 -> 7 ;
+8 [label="double_cabins <= 3.5\nentropy = 1.9557\nsamples = 5534\nvalue = [231, 2570, 1046, 1372, 239, 62, 3, 3, 2, 1, 2, 1\n1, 1]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="length <= 41.5\nentropy = 1.2095\nsamples = 2034\nvalue = [225, 1480, 294, 24, 9, 1, 0, 0, 0, 1, 0, 0, 0\n0]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.8395\nsamples = 1158\nvalue = [212, 919, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"] ;
+9 -> 10 ;
+11 [label="entropy = 1.2567\nsamples = 876\nvalue = [13, 561, 267, 24, 9, 1, 0, 0, 0, 1, 0, 0, 0\n0]"] ;
+9 -> 11 ;
+12 [label="boat_type <= 1.5\nentropy = 1.9465\nsamples = 3500\nvalue = [6, 1090, 752, 1348, 230, 61, 3, 3, 2, 0, 2, 1\n1, 1]"] ;
+8 -> 12 ;
+13 [label="entropy = 1.7536\nsamples = 2088\nvalue = [2, 823, 739, 448, 65, 4, 3, 0, 1, 0, 0, 1, 1\n1]"] ;
+12 -> 13 ;
+14 [label="entropy = 1.5433\nsamples = 1412\nvalue = [4, 267, 13, 900, 165, 57, 0, 3, 1, 0, 2, 0, 0\n0]"] ;
+12 -> 14 ;
+}
